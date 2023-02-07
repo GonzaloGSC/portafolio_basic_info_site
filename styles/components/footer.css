@@ -1,0 +1,154 @@
+:root {
+    --footer_background_color: rgb(32, 32, 37);
+    --footer_letters_color: rgb(255, 255, 255);
+    --footer_buttons_letters_color: rgb(255, 255, 255);
+    --footer_buttons_border_color: wheat;
+    --blue_color: #3b8df1;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+}
+
+footer>div {
+    background: var(--footer_background_color);
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+footer>div>div {
+    display: block;
+    white-space: nowrap;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    max-width: 20%;
+    min-width: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer>div>div>img {
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+footer>div>div>p {
+    white-space: normal;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1rem;
+    color: var(--footer_letters_color);
+}
+
+footer>div>div>nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 20px;
+}
+
+footer>div>div>nav>a {
+    margin-right: 10px;
+    color: var(--footer_buttons_letters_color);
+    -webkit-text-decoration: None;
+    text-decoration: None;
+    place-self: center;
+    padding: 5px;
+}
+
+footer>div>div>nav>a:hover,
+footer>div>div>nav>a:focus {
+    color: var(--footer_buttons_border_color);
+    transition: 0.25s;
+    text-decoration: none;
+}
+
+.project_link:hover,
+.project_link:focus {
+    background: var(--footer_buttons_letters_color);
+    border-radius: 8px;
+}
+
+.final_credits {
+    display: block;
+    place-self: center;
+    width: 100%;
+    padding: 5px 20px 5px 20px;
+}
+
+.final_credits>p {
+    text-align: center;
+    color: var(--footer_letters_color);
+    font-size: 0.6rem;
+    font-weight: 300;
+    line-height: 0.7rem;
+}
+
+.footer_image_icon {
+    width: 45px;
+}
+
+@media (max-height: 500px) {
+    footer>div {
+        position: static;
+    }
+}
+
+@media (max-width: 1180px) {
+    footer>div>div>img {
+        max-width: 100%;
+    }
+
+    .footer_image_icon {
+        width: 30px;
+    }
+}
+
+@media (max-width: 880px) {
+    footer>div>div {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 35%;
+    }
+
+    .footer_image_icon {
+        width: 25px;
+    }
+}
+
+@media (max-width: 585px) {
+    footer>div>div {
+        padding: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 90%;
+        max-width: 90%;
+    }
+
+    footer>div>div>p {
+        font-size: 0.7rem;
+        line-height: 0.75rem;
+    }
+
+    .footer_image_icon {
+        width: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer>div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,503 @@
+:root {
+    --images_spacing: 900px;
+    --text_color: white;
+    --title_background_color: rgba(0, 0, 0, 0.39);
+}
+
+#main_content {
+    padding: 60px;
+    font-size: calc(15px + 0.6vmax);
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 150px 50px 50px 50px;
+    border-radius: 100px;
+    height: 4300px;
+}
+
+.title_section {
+    position: relative;
+    transition: 1s;
+    opacity: 0;
+    color: var(--text_color);
+    background: var(--title_background_color);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: -900;
+}
+
+.series_section {
+    top: 30%;
+    position: fixed;
+    transition: 1s;
+    opacity: 0;
+    color: var(--text_color);
+    background: var(--title_background_color);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: -900;
+}
+
+.films_section {
+    top: 30%;
+    position: fixed;
+    transition: 1s;
+    opacity: 0;
+    color: var(--text_color);
+    background: var(--title_background_color);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: -900;
+}
+
+.final_section {
+    top: 20%;
+    position: fixed;
+    transition: 1s;
+    opacity: 0;
+    color: var(--text_color);
+    background: var(--title_background_color);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: -900;
+}
+
+.title_section>h1,
+.series_section>h1,
+.films_section>h1,
+.final_section>h1 {
+    font-size: 110px;
+    text-align: center;
+    margin-top: 40px;
+    color: var(--text_color);
+}
+
+.title_section>div,
+.series_section>div,
+.films_section>div,
+.final_section>div {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 40px 0;
+}
+
+.title_section>div>img,
+.series_section>div>img,
+.films_section>div>img,
+.final_section>div>img {
+    width: 100px;
+}
+
+#main_content>p {
+    margin: 0 0 40px 0;
+    line-height: 29px;
+    color: var(--text_color);
+}
+
+#main_content>ul {
+    margin: 0 0px 40px 20px;
+}
+
+#main_content>ul>li {
+    line-height: 29px;
+}
+
+#parallax_main {
+    background-image: url("../../media/images/site_background_04.jpg");
+    top: -70px;
+    height: 4728px;
+    ;
+    z-index: -1000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -3000px;
+}
+
+#parallax_div {
+    top: 3685px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    z-index: -1000;
+}
+
+#parallax_games_1,
+#parallax_games_2,
+#parallax_games_3,
+#parallax_games_4,
+#parallax_games_5,
+#parallax_games_6,
+#parallax_games_7,
+#parallax_games_8,
+#parallax_games_9,
+#parallax_series_1,
+#parallax_series_2,
+#parallax_series_3,
+#parallax_series_4,
+#parallax_series_5,
+#parallax_series_6,
+#parallax_series_7,
+#parallax_series_8,
+#parallax_series_9,
+#parallax_films_1,
+#parallax_films_2,
+#parallax_films_3,
+#parallax_films_4,
+#parallax_films_5,
+#parallax_films_6,
+#parallax_films_7,
+#parallax_films_8,
+#parallax_films_9 {
+    height: 1200px;
+    z-index: -1000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s;
+}
+
+#parallax_things_1,
+#parallax_things_2,
+#parallax_things_3,
+#parallax_things_4,
+#parallax_things_5,
+#parallax_things_6,
+#parallax_things_7,
+#parallax_things_8,
+#parallax_things_9 {
+    display: block;
+    height: 7rem;
+    left: 0;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    border: 1px solid white;
+}
+
+#parallax_games_1 {
+    background-image: url("../../media/images/games_w_09.png");
+}
+
+#parallax_games_2 {
+    background-image: url("../../media/images/games_w_04.png");
+    top: calc(400px + var(--images_spacing)*1);
+}
+
+#parallax_games_3 {
+    background-image: url("../../media/images/games_w_06.png");
+    top: calc(400px + var(--images_spacing)*2);
+}
+
+#parallax_games_4 {
+    background-image: url("../../media/images/games_w_01.png");
+    top: calc(400px + var(--images_spacing)*3);
+}
+
+#parallax_games_5 {
+    background-image: url("../../media/images/games_w_05.png");
+    top: calc(400px + var(--images_spacing)*4);
+}
+
+#parallax_games_6 {
+    background-image: url("../../media/images/games_w_03.png");
+    top: calc(400px + var(--images_spacing)*5);
+}
+
+#parallax_games_7 {
+    background-image: url("../../media/images/games_w_07.png");
+    top: calc(400px + var(--images_spacing)*6);
+}
+
+#parallax_games_8 {
+    background-image: url("../../media/images/games_w_08.png");
+    top: calc(400px + var(--images_spacing)*7);
+}
+
+#parallax_games_9 {
+    background-image: url("../../media/images/games_w_02.png");
+    top: calc(400px + var(--images_spacing)*8);
+}
+
+#parallax_series_1 {
+    background-image: url("../../media/images/series_w_01.jpg");
+    top: calc(1600px + var(--images_spacing)*9);
+}
+
+#parallax_series_2 {
+    background-image: url("../../media/images/series_w_02.jpg");
+    top: calc(1600px + var(--images_spacing)*10);
+}
+
+#parallax_series_3 {
+    background-image: url("../../media/images/series_w_03.jpg");
+    top: calc(1600px + var(--images_spacing)*11);
+}
+
+#parallax_series_4 {
+    background-image: url("../../media/images/series_w_04.jpg");
+    top: calc(1600px + var(--images_spacing)*12);
+}
+
+#parallax_series_5 {
+    background-image: url("../../media/images/series_w_05.jpg");
+    top: calc(1600px + var(--images_spacing)*13);
+}
+
+#parallax_series_6 {
+    background-image: url("../../media/images/series_w_06.jpg");
+    top: calc(1600px + var(--images_spacing)*14);
+}
+
+#parallax_series_7 {
+    background-image: url("../../media/images/series_w_07.jpg");
+    top: calc(1600px + var(--images_spacing)*15);
+}
+
+#parallax_series_8 {
+    background-image: url("../../media/images/series_w_08.jpg");
+    top: calc(1600px + var(--images_spacing)*16);
+}
+
+#parallax_series_9 {
+    background-image: url("../../media/images/series_w_09.jpg");
+    top: calc(1600px + var(--images_spacing)*17);
+}
+
+#parallax_films_1 {
+    background-image: url("../../media/images/films_w_01.jpg");
+    top: calc(2800px + var(--images_spacing)*18);
+}
+
+#parallax_films_2 {
+    background-image: url("../../media/images/films_w_02.jpg");
+    top: calc(2800px + var(--images_spacing)*19);
+}
+
+#parallax_films_3 {
+    background-image: url("../../media/images/films_w_03.jpg");
+    top: calc(2800px + var(--images_spacing)*20);
+}
+
+#parallax_films_4 {
+    background-image: url("../../media/images/films_w_04.jpg");
+    top: calc(2800px + var(--images_spacing)*21);
+}
+
+#parallax_films_5 {
+    background-image: url("../../media/images/films_w_05.jpg");
+    top: calc(2800px + var(--images_spacing)*22);
+}
+
+#parallax_films_6 {
+    background-image: url("../../media/images/films_w_06.jpg");
+    top: calc(2800px + var(--images_spacing)*23);
+}
+
+#parallax_films_7 {
+    background-image: url("../../media/images/films_w_07.jpg");
+    top: calc(2800px + var(--images_spacing)*24);
+}
+
+#parallax_films_8 {
+    background-image: url("../../media/images/films_w_08.jpg");
+    top: calc(2800px + var(--images_spacing)*25);
+}
+
+#parallax_films_9 {
+    background-image: url("../../media/images/films_w_09.jpg");
+    top: calc(2800px + var(--images_spacing)*26);
+}
+
+#parallax_things_1 {
+    background-image: url("../../media/images/things_w_01.jpg");
+}
+
+#parallax_things_2 {
+    background-image: url("../../media/images/things_w_02.jpg");
+}
+
+#parallax_things_3 {
+    background-image: url("../../media/images/things_w_03.jpg");
+}
+
+#parallax_things_4 {
+    background-image: url("../../media/images/things_w_04.jpg");
+}
+
+#parallax_things_5 {
+    background-image: url("../../media/images/things_w_05.jpg");
+}
+
+#parallax_things_6 {
+    background-image: url("../../media/images/things_w_06.jpg");
+}
+
+#parallax_things_7 {
+    background-image: url("../../media/images/things_w_07.jpg");
+}
+
+#parallax_things_8 {
+    background-image: url("../../media/images/things_w_08.jpg");
+}
+
+#parallax_things_9 {
+    background-image: url("../../media/images/things_w_09.jpg");
+}
+
+.right_div {
+    display: flex;
+    justify-content: right;
+}
+
+.left_div {
+    display: flex;
+    justify-content: left;
+}
+
+.center_div {
+    display: flex;
+    justify-content: center;
+}
+
+#games_h_1,
+#series_h_1,
+#films_h_1 {
+    opacity: 0;
+    font-size: 110px;
+    text-align: left;
+    margin-top: 40px;
+    color: var(--text_color);
+    inline-size: min-content;
+    line-height: initial;
+    transition: 1s;
+    position: fixed;
+    top: 300px;
+}
+
+#games_h_2,
+#series_h_2,
+#films_h_2 {
+    opacity: 0;
+    font-size: 110px;
+    text-align: right;
+    margin-top: 40px;
+    color: var(--text_color);
+    inline-size: min-content;
+    line-height: initial;
+    transition: 1s;
+    position: fixed;
+    top: 300px;
+}
+
+@media (max-width: 900px) {
+    #games_h_1,
+    #series_h_1,
+    #films_h_1,
+    #games_h_2,
+    #series_h_2,
+    #films_h_2 {
+        font-size: 50px;
+    }
+
+    #parallax_main {
+        background-position-y: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    #main_content {
+        margin: 150px 10px 50px 10px;
+        border-radius: 50px;
+    }
+
+    .title_section>h1,
+    .series_section>h1,
+    .films_section>h1,
+    .final_section>h1 {
+        font-size: 70px;
+        line-height: 70px;
+        margin-top: 20px;
+    }
+
+    .title_section>div,
+    .series_section>div,
+    .films_section>div,
+    .final_section>div {
+        margin: 30px 0 40px 0;
+    }
+
+    .title_section>div>img,
+    .series_section>div>img,
+    .films_section>div>img,
+    .final_section>div>img {
+        width: 50px;
+    }
+
+    #games_h_1,
+    #series_h_1,
+    #films_h_1,
+    #games_h_2,
+    #series_h_2,
+    #films_h_2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 585px) {
+    #main_content {
+        margin: 120px 10px 50px 10px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    #main_content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #games_h_1,
+    #series_h_1,
+    #films_h_1,
+    #games_h_2,
+    #series_h_2,
+    #films_h_2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 330px) {
+    .title_section>h1,
+    .series_section>h1,
+    .films_section>h1,
+    .final_section>h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 20px;
+    }
+
+    .title_section>div,
+    .series_section>div,
+    .films_section>div,
+    .final_section>div {
+        margin: 20px 0 20px 0;
+    }
+
+    .title_section>div>img,
+    .series_section>div>img,
+    .films_section>div>img,
+    .final_section>div>img {
+        width: 40px;
+    }
+}

@@ -1,0 +1,20 @@
+:root {
+    --footer_buttons_letters_color: rgb(255, 255, 255);
+    --blue_color: #3b8df1;
+    --background_color: rgb(68, 68, 68);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: var(--background_color);
+    position: relative;
+}
+
+header>div,
+footer>div,
+body {
+    max-height: 1500px;
+    max-width: 1500px;
+}
+

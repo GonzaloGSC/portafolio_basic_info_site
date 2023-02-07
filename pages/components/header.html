@@ -1,0 +1,44 @@
+<div id="nav_menu_hidden">
+    <i class="icon-list icon-3x" id="nav_menu_button"></i>
+    <nav id="menu_hidden">
+        <a href="/01_basic_info_site/index.html">Home</a>
+        <a href="" onclick="f_change_page('games.html', event)">VideoGames</a>
+        <a href="" onclick="f_change_page('series.html', event)">Series</a>
+        <a href="" onclick="f_change_page('films.html', event)">Films</a>
+        <a href="" onclick="f_change_page('things.html', event)">Things of interest</a>
+    </nav>
+</div>
+
+<div>
+    <img src="/01_basic_info_site/media/images/logo.png" alt="page_logo">
+    <p id="author">por Gonzalo Salinas.</p>
+    <p id="author_hidden">por Gonzalo S.</p>
+</div>
+
+<nav>
+    <a href="/01_basic_info_site/index.html">Home</a>
+    <a href="" onclick="f_change_page('games.html', event)">VideoGames</a>
+    <a href="" onclick="f_change_page('series.html', event)">Series</a>
+    <a href="" onclick="f_change_page('films.html', event)">Films</a>
+    <a href="" onclick="f_change_page('things.html', event)">Things of interest</a>
+</nav>
+
+<div class="contact_div">
+    <i class="icon-info-sign icon-3x" id="info_menu_button"></i>
+    <span id="phone_copied">Phone copiado</span>
+    <span id="email_copied">Email copiado</span>
+    <span id="direction_copied">Dir. copiada</span>
+    <div id="info_menu_hidden">
+        <div id="info_hidden">
+            <p id="phone" onclick="f_copy_text('+56 (9)12345678', 'phone_copied')"><i
+                    class="icon-mobile-phone icon-1x"></i> +56 (9)12345678</p>
+            <p id="email" onclick="f_copy_text('contacto@correo.cl', 'email_copied')"><i
+                    class="icon-envelope-alt icon-1x"></i> contacto@correo.cl</p>
+            <p id="direction" onclick="f_copy_text('Chile, Santiago, Av. Principal #1234', 'direction_copied')"><i
+                    class="icon-building icon-1x"></i> Chile, Santiago, Av. Principal #1234</p>
+            <div>
+                <button class="button_info">Ver más información</button>
+            </div>
+        </div>
+    </div>
+</div>

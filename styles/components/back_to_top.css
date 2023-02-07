@@ -1,0 +1,43 @@
+:root {
+    --white_color: white;
+    --blue_color: #3b8df1;
+}
+
+#back_to_top_justify_div {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#back_to_top_div {
+    display: none;
+    position: fixed;
+    top: 114px;
+    justify-content: center;
+    transition: 1s;
+    color: var(--white_color);
+    opacity: 0;
+}
+
+#back_to_top_div>a {
+    text-decoration: none;
+
+}
+
+#back_to_top_icon {
+    font-size: 80px;
+    background-image: url("../../media/images/white_01.png");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 18px;
+    background-size: 50px 40px;
+}
+
+@media (max-width:585px) {
+    #back_to_top_icon {
+        font-size: 70px;
+        background-position-x: 7px;
+        background-position-y: 16px;
+        background-size: 45px 30px;
+    }
+}
