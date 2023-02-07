@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    $('#content_div_main').load("/01_basic_info_site/pages/main.html");
-    $('#header_div').load("/01_basic_info_site/pages/components/header.html");
-    $('#footer_div').load("/01_basic_info_site/pages/components/footer.html");
-    $('#back_to_top_button').load("/01_basic_info_site/pages/components/back_to_top.html");
+    $('#content_div_main').load("../pages/main.html");
+    $('#header_div').load("../pages/components/header.html");
+    $('#footer_div').load("../pages/components/footer.html");
+    $('#back_to_top_button').load("../pages/components/back_to_top.html");
 
     setTimeout(() => {
         f_move_backgrounds();
